@@ -1,0 +1,143 @@
+/* GLobal CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase; /* Transform text to uppercase */
+    font-family: 'Graduate', cursive; /* Set font family */
+}
+
+body {
+    width: 100vw; /* Set width to 100% of viewport*/
+    height: 100vh; /* Set height to 100% of viewport height */
+    overflow: hidden; /* Hide overflow */
+    background-color: #5F4B8BFF; /* Set background color */
+    color: #E69A8DFF; /* Set text color */
+}
+
+/********* Style buttons to change lenth of time *********/
+.changeTime {
+    display: flex; /* Set display to flex*/
+    justify-content: center; /* enter content hotizontally */
+    position: relative; /* Set position to reltive */
+    top: 25%; /* Offset top position */
+}
+
+/* Styling of the containers for setting session length and break length */
+.chooseTimeStudy, .chooseTimeBreak {
+    width: 200px; /* Set width */
+    display: flex; /* Set display to flex */
+    justify-content: center; /* Center content horizontally */
+    flex-direction: column; /* Set flex direction to column */
+    align-items: center; /* Center items vertically */
+    letter-spacing: 0.5px; /* Adjust letter spacing */
+}
+
+/* Styling of the buttons container */
+.buttons {
+    display: flex; /* Set display to flex */
+    align-items: center; /* Center items vertically */
+    height: 3.1rem; /* Set height */
+}
+
+/* Styling of the buttons to decrease and increase session and break length time */
+#minusTimeStudy,
+#plusTimeStudy,
+#minusTimeBreak,
+#plusTimeBreak {
+    width: 1.25rem; /* Set width */
+    height: 1.25rem; /* Set height */
+    padding: 0.2rem 1rem; /* Set padding */
+    display: flex; /* Set display to flex */
+    justify-content: center; /* Center contelt horizontally */
+}
+
+/*Cursor-enable state*/
+.minusTimeStudy:hover,
+.plusTimeStudy:hover,
+.minusTimeBreak:hover,
+.plusTimeBreak:hover {
+    cursor: pointer; /* Set cursor to pointer */
+}
+
+/*Styling for cursor when buttons are disabled */
+.minusTimeStudyNone:hover, .plusTimeStudyNone:hover, .minusTimeBreakNone:hover, .plusTimeBreakNone:hover {
+    cursor: default; /* Set cursor to default */
+}
+
+/* Stylign pf text that displays session and break time */
+#chooseTimeValueStudy, #chooseTimeValueBreak {
+    font-size: 25px; /* Set font size */
+}
+
+/*********Timer*********/
+.box {
+    width: 100vw; /* Set width */
+    height: 100vh; /* Set height */
+    display: flex; /* Set display to flex */
+    justify-content: center; /* Center contelt horizontally */
+    flex-direction: column; /* Set flex direction to column */
+    text-align: center; /* Center text horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+/* Styling of the timer */
+.timer {
+    font-size: 125px; /* Set font size */
+    letter-spacing: 6px; /* Adjust letter spacing */
+}
+
+/* Text displaying what to do */
+.whatToDo {
+    margin-top: 0.625rem; /* Set top margin */
+    font-size: 25px; /* Set font size */
+    display: flex; /* Set display to text */
+    justify-content: center; /* Center content horizontally */
+}
+
+/********* Start and Clear button *********/
+
+/* Styling of the play and start button */
+#actionButtonStart, #actionButtonClear  {
+    width: 9.5rem; /* Set width */
+    margin-top: 4.5rem; /* Set margin */
+    padding: 0.6rem 1rem; /* Set padding */
+    border: 1px solid; /* Set border */
+    border-radius: 0.75rem; /* Set border radius */
+    font-weight: bold; /* Set font weight */
+    letter-spacing: 2px; /* Adjust letter spacing */
+} 
+
+/* Invisible state */
+.actionButtonStartNone, .actionButtonClearNone {
+    display: none; /* Hide element */
+}
+
+/* Styling of the start button to initiate timer */
+.actionButton {
+    color: #E69A8DFF; /* Set text color */
+    border-color: #E69A8DFF; /* Set border color */
+    background-color: #5F4B8BFF; /* Set background color */
+}
+
+/* Styling of the start button when hovered to initiate timer */
+.actionButton:hover, .actionButton:hover {
+    color: #5F4B8BFF; /* Set text color */
+    border-color: #E69A8DFF; /* Set border color */
+    background-color: #E69A8DFF; /* Set background color */
+    cursor: pointer; /* Change cursor to pointer */
+}  
+
+/* Styling of the clear button to stop timer */
+.actionButtonBreak {
+    color: #5F4B8BFF; /* Set text color */
+    border-color: #5F4B8BFF; /* Set border color */
+    background-color: #E69A8DFF; /* Set background color */
+}
+
+/* Styling of the clear button when hovered to stop timer */
+.actionButtonBreak:hover {
+    color: #E69A8DFF; /* Set text color */
+    border-color: #5F4B8BFF; /* Set border color */
+    background-color: #5F4B8BFF; /* Set background color */
+}

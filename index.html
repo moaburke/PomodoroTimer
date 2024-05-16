@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Set character encoding -->
+    <meta charset="UTF-8"> 
+    <!-- Set compability mode -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Set viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page title -->
+    <title>Pomodoro Timer</title>
+    <!-- preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Import Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Graduate&display=swap" rel="stylesheet">
+    <!-- Import Font Awesome -->
+    <script src="https://kit.fontawesome.com/4f1988a159.js" crossorigin="anonymous"></script>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link to external JavaScript file -->
+    <script src="./timer.js" defer></script>
+</head>
+<body>
+    <!-- Container for changing time settings -->
+    <div class="changeTime">
+        <!-- Container for setting session length -->
+        <div class="chooseTimeStudy">
+            <p>Session Length</p>
+            <div class="buttons">
+                <!-- Button to decrease session time -->
+                <div id="minusTimeStudy" class="minusTimeStudy"><i class="fa-solid fa-angles-left"></i></div>
+                <!-- Display session time -->
+                <span class="bread-icon"><p id="chooseTimeValueStudy"></p></span>
+                <!-- Button to increase session time -->
+                <div id="plusTimeStudy" class="plusTimeStudy"><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+        </div>
+    
+        <!-- Container for setting break length -->
+        <div class="chooseTimeBreak">
+            <p>Break Length</p>
+            <div class="buttons">
+                <!-- Button to decrease break time -->
+                <div id="minusTimeBreak" class="minusTimeBreak"><i class="fa-solid fa-angles-left"></i></div>
+                <!-- Display break time -->
+                <p id="chooseTimeValueBreak"></p>
+                <!-- Button to increase break time -->
+                <div id="plusTimeBreak" class="plusTimeBreak"><i class="fa-solid fa-angles-right"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Timer display and controls -->
+    <div class="box">
+        <!-- Display timer -->
+        <p class="timer"><span class="m">25</span>:<span class="s">00</span></p>
+        <!-- Display what to do -->
+        <p class="whatToDo">Start Session</p>
+        <!-- Button to start timer -->
+        <button id="actionButtonStart" class="actionButton">Start</button>
+        <!-- Button to clear timer -->
+        <button id="actionButtonClear" class="actionButton actionButtonClearNone">Clear</button>
+    </div>
+</body>
+</html>
