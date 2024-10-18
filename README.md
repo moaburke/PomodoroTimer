@@ -1,9 +1,11 @@
 # Pomodoro Timer
 
+![pomodoro_timer.png](pomodoro_timer.png)
+
 A simple Pomodoro Timer built with HTML, CSS, and JavaScript. This project allows users to set focus and break times, start/stop the timer, and view the remaining time.
 
 
-Check it out: [Pomodoro Timer]([https://pages.github.com/](https://moaburke.github.io/PomodoroTimer/)).
+Check it out: [Pomodoro Timer]([https://moaburke.github.io/PomodoroTimer/]).
 
 ## Features
 
